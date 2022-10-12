@@ -1,17 +1,17 @@
 # pyspark-demo
-# Set the Environment Variables
-"""Set the Environment Variables"""
+
+# """Set the Environment Variables"""
 
 import os
 os.environ["JAVA_HOME"] = "/usr/lib/jvm/java-8-openjdk-amd64"
 os.environ["SPARK_HOME"] = "/content/spark-3.1.3-bin-hadoop3.2"
 
-"""Locate spark just to make sure command doesnt error out ?"""
+# """Locate spark just to make sure command doesnt error out ?"""
 
 import findspark
 findspark.init()
 
-"""create spark context"""
+# """create spark context"""
 
 from pyspark.sql import SparkSession
 spark = SparkSession.builder\
@@ -59,7 +59,7 @@ date_cast.show(truncate=False)
 
 date_cast.printSchema
 
-"""#clensed"""
+# """#clensed"""
 
 from pyspark.sql.functions import when
 data_clean=raw_data.withColumn('referrer_present', when(col('referrer') == '-', "No").otherwise("Yes"))
