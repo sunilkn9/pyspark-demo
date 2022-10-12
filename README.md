@@ -127,8 +127,8 @@ spark=SparkSession.builder.master("local[2]") \
 
 sfOptions = {
   "sfURL" : "https://fi73281.ap-south-1.aws.snowflakecomputing.com/",
-  "sfUser" : "sunilkn",
-  "sfPassword" : "Sunil@123",
+  "sfUser" : "*****",
+  "sfPassword" : "*****",
   "sfDatabase" : "MY_DATABASE",
   "sfSchema" : "csv",
   "sfWarehouse" : "COMPUTE_WH "
