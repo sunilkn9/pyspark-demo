@@ -1,4 +1,4 @@
-# log_project
+# pyspark_demo
 
 Pre-Requisites:
 
